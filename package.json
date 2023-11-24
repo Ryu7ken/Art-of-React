@@ -1,0 +1,47 @@
+{
+  "name": "art-of-react",
+  "version": "1.0.0",
+  "description": "Art of React by Abdul Baquiur Rahman",
+  "scripts": {
+    "start": "parcel React.html",
+    "build": "parcel build React.html",
+    "test": "jest",
+    "watch-test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Ryu7ken/Art-of-React.git)"
+  },
+  "keywords": [],
+  "author": "Abdul Baquiur Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@tailwindcss/forms": "^0.5.7",
+    "flowbite-react": "^0.6.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-redux": "^8.1.3",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.2",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "parcel": "^2.10.2",
+    "postcss": "^8.4.31",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.5"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
