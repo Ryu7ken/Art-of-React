@@ -39,8 +39,8 @@ const Cart = () => {
                 </div>
             </div>
         
-            <div className="m-auto w-9/12">
-                <div className="w-10/12 m-auto rounded-lg bg-gray-100 shadow-xl shadow-blue-300">
+            <div className="m-auto w-10/12">
+                <div className="w-11/12 m-auto rounded-lg bg-gray-100 shadow-xl shadow-blue-300">
                     <h1 className="text-3xl font-bold text-center py-4 border-b-2">Checkout</h1>
 
                     <div className="flex justify-between">
