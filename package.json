@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Art of React by Abdul Baquiur Rahman",
   "scripts": {
-    "start": "parcel React.html",
-    "build": "parcel build React.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest",
     "watch-test": "jest --watch"
   },
