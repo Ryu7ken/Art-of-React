@@ -22,15 +22,15 @@ const RestaurantCard = (props) => {
             <div className="flex space-x-10">
 
                 <div className="px-3 flex">
-                    <div className="mt-1">
-                        <MdStars size={18} color="green" />
+                    <div className="">
+                        <MdStars size={21} color="green" />
                     </div>
                     <h4 className="ml-1 font-semibold">{avgRating}</h4>
                 </div>
 
                 <div className="px-2 flex">
-                    <div className="mt-1">
-                        <BiSolidTimeFive size={18} />
+                    <div className="">
+                        <BiSolidTimeFive size={21} />
                     </div>
                     <h4 className="px-1 font-semibold">{deliveryTime} min</h4>
                 </div>

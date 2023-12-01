@@ -1,6 +1,7 @@
 import { CDN_URL } from "../utils/constants";
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
+import { Button } from 'flowbite-react';
 
 const ItemList = ({items}) => {
 
@@ -30,9 +31,9 @@ const ItemList = ({items}) => {
                         <div className="h-28 w-32 mb-5 rounded-lg relative overflow-hidden">
                             <img src={CDN_URL + item.card.info.imageId} className="w-full h-full object-cover"/>
                             
-                            <button className="absolute bottom-0 py-1 px-5 mx-6 mt-24 bg-white text-xs font-bold text-green-600 border border-gray-300 rounded-lg hover:shadow-white hover:shadow-xl hover:border-green-500"
+                            <button className="absolute bottom-0 mx-8"
                             onClick={() => handleAddItem(item)}>
-                                ADD+</button>
+                                <Button outline size="xs" mx='6' gradientDuoTone="greenToBlue">ADD+</Button></button>
                         </div>
  
                     </div>

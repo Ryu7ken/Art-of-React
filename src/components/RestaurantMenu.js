@@ -63,7 +63,7 @@ const RestaurantMenu = () => {
                         <div className="mt-4">
                             <MdOutlineDeliveryDining size={24}/>
                         </div>
-                        <h4 className="py-4 px-1 text-gray-600">{message}</h4>
+                        <h4 className="py-4 px-1">{message}</h4>
                     </div>
 
                 </div>

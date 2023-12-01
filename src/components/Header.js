@@ -21,7 +21,7 @@ const Header = () => {
                         <Link to="/">Home</Link>
                         </li>
                     <li className="mx-4 my-2 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
-                        <Link to="/about">About Us</Link>
+                        <Link to="/about">About</Link>
                         </li>
                     <li className="mx-4 my-2 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
                         <Link to="/contact">Contact Us</Link>
