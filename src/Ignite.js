@@ -11,12 +11,20 @@ import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
+import { createGlobalStyle } from "styled-components";
 
 const AppLayout = () => {
+
+    const GlobalStyle = createGlobalStyle`
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }`;
+
 
     return (
         <Provider store={appStore}>
             <div>
+                <GlobalStyle/>
                 <Header/>
                 <Outlet/>
                 <Footer/>

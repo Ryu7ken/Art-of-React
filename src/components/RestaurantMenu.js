@@ -38,7 +38,7 @@ const RestaurantMenu = () => {
                                 <Link to="/"><Breadcrumb.Item icon={HiHome}>Home {'>'}</Breadcrumb.Item></Link>
                                 <Link to={"/restaurants/"+restaurantId}><Breadcrumb.Item> {name}</Breadcrumb.Item></Link>
                             </Breadcrumb>
-                            <h1 className="py-5 text-2xl font-bold font-serif">{name}</h1>
+                            <h1 className="py-5 text-2xl font-bold">{name}</h1>
                         </div>
 
                         <div className="">

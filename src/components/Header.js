@@ -16,17 +16,17 @@ const Header = () => {
             </div>
 
             <div className="flex items-center">
-                <ul className="flex">
-                    <li className="mx-6 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
+                <ul className="flex my-auto">
+                    <li className="mx-4 my-2 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
                         <Link to="/">Home</Link>
                         </li>
-                    <li className="mx-6 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
+                    <li className="mx-4 my-2 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
                         <Link to="/about">About Us</Link>
                         </li>
-                    <li className="mx-6 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
+                    <li className="mx-4 my-2 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
                         <Link to="/contact">Contact Us</Link>
                         </li>
-                    <li className="mx-6 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
+                    <li className="mx-4 my-2 text-xl transition duration-300 hover:duration-300 hover:text-blue-500">
                         <Link to="/cart">({cartItems.length}) Cart</Link>
                         </li>
 
