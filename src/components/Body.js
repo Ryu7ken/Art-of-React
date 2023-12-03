@@ -10,11 +10,11 @@ import { Button } from 'flowbite-react';
 
 const Body = () => {
 
-    const [listOfOffer, setListOfOffer] = useState([]);
-    const [listOfCuisine, setListOfCuisine] = useState([]);
     const [listOfRestaurant, setListOfRestaurant] = useState([]);
     const [filteredRestaurant, setFilteredRestaurant] = useState([]);
     const [searchText, setSearchText] = useState("");
+    const [listOfOffer, setListOfOffer] = useState([]);
+    const [listOfCuisine, setListOfCuisine] = useState([]);
 
     useEffect(() => {
         fetchData();
