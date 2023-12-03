@@ -14,7 +14,7 @@ const Header = () => {
 
             <Link to="/">
                 <div className="ml-10 h-28 scale-105 flex relative overflow-hidden transition duration-300 hover:duration-300 hover:scale-110">
-                    <img src={fplogo} className="w-20 object-cover bg-transparent " />
+                    {/* <img src={fplogo} className="w-20 object-cover bg-transparent " /> */}
                     <img src={fptext} className="w-36 ml-2 scale-150 object-cover bg-transparent" />
                 </div>
             </Link>
