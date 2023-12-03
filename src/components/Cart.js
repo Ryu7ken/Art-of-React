@@ -3,7 +3,7 @@ import CartList from "./CartList";
 import { clearCart } from "../utils/cartSlice";
 import { Link } from "react-router-dom";
 import { Button } from 'flowbite-react';
-import empty from "../utils/images/emptycart.jpg";
+import emptycart from "../utils/images/emptycart.jpg";
 
 const Cart = () => {
     const cartItems = useSelector((store) => store.cart.items);
@@ -22,7 +22,7 @@ const Cart = () => {
     return (cartItems.length === 0) ? (
             <div className="m-auto w-9/12">
                 <div className="my-10 text-center">
-                    <img src={empty}
+                    <img src={emptycart}
                     className="m-auto"/>
                     <h1 className="text-lg font-semibold">Your cart is empty</h1>
                     <h1 className="">You can go to home page to view more restaurants</h1>
