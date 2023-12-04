@@ -1,7 +1,7 @@
 {
   "name": "foodpanda",
   "version": "1.0.0",
-  "description": "Art of React by Abdul Baquiur Rahman",
+  "description": "Foodpanda by Abdul Baquiur Rahman",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -43,6 +43,6 @@
     "tailwindcss": "^3.3.5"
   },
   "browserslist": [
-    "last 5 versions"
+    "last 3 versions"
   ]
 }
