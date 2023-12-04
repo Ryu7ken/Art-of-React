@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Button } from 'flowbite-react';
-import logo from "/public/static/images/fplogo.png";
-import text from "/public/static/images/fptext.png";
+import logo from "../public/static/images/fplogo.png";
+import text from "../public/static/images/fptext.png";
 
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
