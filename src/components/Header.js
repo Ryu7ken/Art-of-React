@@ -12,8 +12,8 @@ const Header = () => {
 
             <Link to="/">
                 <div className="ml-10 h-28 scale-105 flex relative overflow-hidden transition duration-300 hover:duration-300 hover:scale-100">
-                    <img src={require("../../public/static/images/fplogo.svg")} alt="" className="w-20 object-cover bg-transparent " />
-                    <img src={require("../../public/static/images/fptext.svg")} alt="" className="w-36 ml-2 scale-150 object-cover bg-transparent" />
+                    <img src={require("/public/static/fplogo.svg")} alt="" className="w-20 object-cover bg-transparent " />
+                    <img src={require("/public/static/fptext.svg")} alt="" className="w-36 ml-2 scale-150 object-cover bg-transparent" />
                 </div>
             </Link>
 
