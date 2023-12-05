@@ -5,7 +5,7 @@ const Error = () => {
     console.log(err);
     return(
         <div className="w-4/12 m-auto text-center">
-            <img src={"./SVG/error-page.svg"} alt="error"/>
+            <img src={"/SVG/error-page.svg"} alt="error"/>
             <h1 className="mb-4 font-bold text-3xl">{err.status} : {err.statusText}</h1>
             <h1 className="text-gray-600">
                 Uh-oh! Looks like the page you are trying to access, doesn't exist. Please start afresh.
