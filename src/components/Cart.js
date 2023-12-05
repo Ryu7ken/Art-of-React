@@ -3,7 +3,6 @@ import CartList from "./CartList";
 import { clearCart } from "../utils/cartSlice";
 import { Link } from "react-router-dom";
 import { Button } from 'flowbite-react';
-import empty from "../utils/SVG/empty-cart.svg";
 
 const Cart = () => {
     const cartItems = useSelector((store) => store.cart.items);
@@ -24,7 +23,7 @@ const Cart = () => {
 
                 <div className="my-10 text-center">
 
-                    <img src={empty} alt="" className="m-auto"/>
+                    <img src={require('../utils/SVG/empty-cart.svg')} alt="" className="m-auto"/>
                     <h1 className="text-lg font-semibold">Your cart is empty</h1>
                     <h1 className="">You can go to home page to view more restaurants</h1>
                     <Link to="/"><button className="bg-blue-500 hover:bg-blue-600 hover:cursor-pointer rounded-lg my-3 py-2 px-4 font-semibold text-white">Go Home</button></Link>
