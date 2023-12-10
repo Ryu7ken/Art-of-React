@@ -52,7 +52,7 @@ const Body = () => {
         },[searchText, listOfRestaurant]);
 
 
-    return (listOfRestaurant.length === 0) ? (<Shimmer/>) : (
+    return (listOfRestaurant?.length === 0) ? (<Shimmer/>) : (
 
         <div className="m-auto w-9/12">
 

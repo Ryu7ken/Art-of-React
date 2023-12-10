@@ -1,5 +1,6 @@
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import {useParams, Link } from "react-router-dom";
+import RestaurantNestedCategory from "./RestaurantNestedCategory";
 import RestaurantCategory from "./RestaurantCategory";
 import ShimmerMenu from "./ShimmerMenu";
 import { MdOutlineDeliveryDining } from "react-icons/md";
@@ -23,7 +24,9 @@ const RestaurantMenu = () => {
         (c) => c?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
 
+    const categoryItems = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
 
+    console.log(categoryItems);
     
     return(
         <div className="w-7/12 mx-auto my-6">
@@ -86,9 +89,17 @@ const RestaurantMenu = () => {
                 </div>
             </div>
 
-            {categories.map((category) => (
-                <RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card}/>
-            ))}
+                {categories.map((category) => (
+                    <RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card}/>))}
+
+                {categoryItems?.cards.map((category) => (
+                    <div>
+                        {category?.card?.card?.categories &&
+                            category?.card?.card?.categories.map((category) => (
+                            <RestaurantNestedCategory key={category?.card?.card?.title} data={category?.itemCards} title={category?.title}/>
+                        ))}                           
+                    </div>
+                ))}
 
         </div>
     );

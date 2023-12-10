@@ -27,7 +27,7 @@ const Footer = () => {
                 <div className="w-11/12 border-t-2 m-auto border-gray-500">
                     
                     <div className="flex justify-evenly p-9">
-                        <h1>© foodpanda Pvt. Ltd</h1>
+                        <h1>© foodpanda</h1>
                         <Link to="https://github.com/Ryu7ken/foodpanda.git"><BsGithub size={30}/></Link>
                     </div>
 
