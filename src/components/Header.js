@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Button } from 'flowbite-react';
-import fplogo from "./fplogo.svg";
-import fptext from "./fptext.svg";
 
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
@@ -12,12 +10,12 @@ const Header = () => {
     return (
         <div className="h-24 flex justify-between bg-opacity-25 bg-blue-100 shadow-blue-300 shadow-lg">
 
-            <Link to="/">
+            {/* <Link to="/">
                 <div className="ml-10 h-28 scale-105 flex relative overflow-hidden transition duration-300 hover:duration-300 hover:scale-100">
                     <img src={fplogo} alt="" className="w-20 object-cover bg-transparent " />
                     <img src={fptext} alt="" className="w-36 ml-2 scale-150 object-cover bg-transparent" />
                 </div>
-            </Link>
+            </Link> */}
 
             <div className="flex items-center">
                 <ul className="flex my-auto">
