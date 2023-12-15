@@ -5,32 +5,13 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import { useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
-import { RES_API } from "../utils/constants";
 import { Button } from 'flowbite-react';
+import useRestaurantList from "../utils/useRestaurantList";
 
 const Body = () => {
 
-    const [listOfRestaurant, setListOfRestaurant] = useState([]);
-    const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+    const {listOfOffer = [], listOfCuisine = [], listOfRestaurant = [], filteredRestaurant = [], setFilteredRestaurant} = useRestaurantList();
     const [searchText, setSearchText] = useState("");
-    const [listOfOffer, setListOfOffer] = useState([]);
-    const [listOfCuisine, setListOfCuisine] = useState([]);
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    const fetchData = async () => {
-
-        const data = await fetch(RES_API);
-
-        const json = await data.json();
-        
-        setListOfOffer(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
-        setListOfCuisine(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.info);
-        setListOfRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setFilteredRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    };
 
 
     const onlineStatus = useOnlineStatus();
