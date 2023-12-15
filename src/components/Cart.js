@@ -3,7 +3,7 @@ import CartList from "./CartList";
 import { clearCart } from "../utils/cartSlice";
 import { Link } from "react-router-dom";
 import { Button } from 'flowbite-react';
-import emptycart from "../../public/emptycart.svg";
+import emptycart from "./public/emptycart.svg";
 
 const Cart = () => {
     const cartItems = useSelector((store) => store.cart.items);
