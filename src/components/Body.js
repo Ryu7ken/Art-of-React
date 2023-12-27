@@ -1,5 +1,4 @@
 import RestaurantCard from "./RestaurantCard";
-import OfferCard from "./OfferCard";
 import CuisineCard from "./CuisineCard";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useEffect, useState} from "react";
@@ -10,7 +9,7 @@ import useRestaurantList from "../utils/useRestaurantList";
 
 const Body = () => {
 
-    const {listOfOffer = [], listOfCuisine = [], listOfRestaurant = [], filteredRestaurant = [], setFilteredRestaurant} = useRestaurantList();
+    const {listOfCuisine = [], listOfRestaurant = [], filteredRestaurant = [], setFilteredRestaurant} = useRestaurantList();
     const [searchText, setSearchText] = useState("");
 
 
@@ -38,13 +37,13 @@ const Body = () => {
         <div className="m-auto w-9/12">
 
             <div className="border-b-2">
-                <h1 className="mt-7 font-bold text-3xl">Best offers for you</h1>
+                {/* <h1 className="mt-7 font-bold text-3xl">Best offers for you</h1>
 
                 <div className="my-10 flex overflow-x-scroll">
                     {listOfOffer.map((offer) => (
                         <OfferCard key={offer.id} resOffer={offer}/>
                         ))}
-                </div>
+                </div> */}
 
                 <h1 className="mt-7 font-bold text-3xl">What's on your mind?</h1>
 

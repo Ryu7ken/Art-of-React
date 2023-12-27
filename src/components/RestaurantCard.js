@@ -38,7 +38,7 @@ const RestaurantCard = (props) => {
             </div>
 
             <div className="flex justify-between">  
-                <h4 className="pl-3 pb-2 text-gray-500 truncate">{areaName}</h4>
+                <h4 className="w-4/6 pl-3 pb-2 text-gray-500 truncate">{areaName}</h4>
                 <h4 className="w-3/6 pr-3 pb-2 text-right text-gray-600">{costForTwo}</h4>
             </div>
             
