@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { Button } from 'flowbite-react';
 import useRestaurantList from "../utils/useRestaurantList";
+import OfferCard from "./OfferCard";
 
 const Body = () => {
 
-    const {listOfCuisine = [], listOfRestaurant = [], filteredRestaurant = [], setFilteredRestaurant} = useRestaurantList();
+    const {listOfOffer = [], listOfCuisine = [], listOfRestaurant = [], filteredRestaurant = [], setFilteredRestaurant} = useRestaurantList();
     const [searchText, setSearchText] = useState("");
 
 
@@ -37,13 +38,13 @@ const Body = () => {
         <div className="m-auto w-9/12">
 
             <div className="border-b-2">
-                {/* <h1 className="mt-7 font-bold text-3xl">Best offers for you</h1>
+                <h1 className="mt-7 font-bold text-3xl">Best offers for you</h1>
 
                 <div className="my-10 flex overflow-x-scroll">
                     {listOfOffer.map((offer) => (
                         <OfferCard key={offer.id} resOffer={offer}/>
                         ))}
-                </div> */}
+                </div>
 
                 <h1 className="mt-7 font-bold text-3xl">What's on your mind?</h1>
 
