@@ -32,10 +32,11 @@ const Header = () => {
                         <Link to="/cart">({cartItems.length}) Cart</Link>
                         </li>
 
-                    <button className="mx-3 items-center"
-                        onClick={() => {
+                    <Button className="mx-3 items-center"
+                    onClick={() => {
                         btnNameReact === "Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login");
-                    }}><Button outline gradientDuoTone="purpleToBlue">{btnNameReact}</Button></button>
+                    }} 
+                    outline gradientDuoTone="purpleToBlue">{btnNameReact}</Button>
                 </ul>
             </div>
             

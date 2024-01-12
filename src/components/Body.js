@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { Button } from 'flowbite-react';
 import useRestaurantList from "../utils/useRestaurantList";
-import OfferCard from "./OfferCard";
+// import OfferCard from "./OfferCard";
 
 const Body = () => {
 
-    const {listOfOffer = [], listOfCuisine = [], listOfRestaurant = [], filteredRestaurant = [], setFilteredRestaurant} = useRestaurantList();
+    const {listOfCuisine = [], listOfRestaurant = [], filteredRestaurant = [], setFilteredRestaurant} = useRestaurantList();
     const [searchText, setSearchText] = useState("");
 
 
@@ -38,13 +38,13 @@ const Body = () => {
         <div className="m-auto w-9/12">
 
             <div className="border-b-2">
-                <h1 className="mt-7 font-bold text-3xl">Best offers for you</h1>
+                {/* <h1 className="mt-7 font-bold text-3xl">Best offers for you</h1>
 
                 <div className="my-10 flex overflow-x-scroll">
                     {listOfOffer.map((offer) => (
                         <OfferCard key={offer.id} resOffer={offer}/>
                         ))}
-                </div>
+                </div> */}
 
                 <h1 className="mt-7 font-bold text-3xl">What's on your mind?</h1>
 
@@ -65,39 +65,35 @@ const Body = () => {
                 </div>
 
                 <div className="">
-                    <button className=""
-                        onClick={ () => {
-                            const filteredList = filteredRestaurant.filter((res) => res.info.sla.deliveryTime <= 30);
-                            setFilteredRestaurant(filteredList);
-                        }}><Button outline gradientDuoTone="tealToLime">
-                        Fast Delivery </Button></button>
+                    <Button onClick={ () => {
+                                const filteredList = filteredRestaurant.filter((res) => res.info.sla.deliveryTime <= 30);
+                                setFilteredRestaurant(filteredList);
+                            }}
+                    outline gradientDuoTone="tealToLime">Fast Delivery </Button>
                 </div>
 
                 <div className="">
-                    <button className=""
-                        onClick={ () => {
-                            const filteredList = listOfRestaurant.filter((res) => res.info.avgRating >= 4.5);
-                            setFilteredRestaurant(filteredList);
-                        }}><Button outline gradientDuoTone="tealToLime">
-                         Ratings 4.5+ </Button></button>
+                    <Button onClick={ () => {
+                                const filteredList = listOfRestaurant.filter((res) => res.info.avgRating >= 4.5);
+                                setFilteredRestaurant(filteredList);
+                            }}
+                    outline gradientDuoTone="tealToLime">Ratings 4.5+ </Button>
                 </div>
 
                 <div className="">
-                    <button className=""
-                        onClick={ () => {
-                            const filteredList = listOfRestaurant.filter((res) => res.info.veg === true);
-                            setFilteredRestaurant(filteredList);
-                        }}><Button outline gradientDuoTone="tealToLime">
-                            Pure Veg </Button></button>
+                    <Button onClick={ () => {
+                                const filteredList = listOfRestaurant.filter((res) => res.info.veg === true);
+                                setFilteredRestaurant(filteredList);
+                            }}
+                    outline gradientDuoTone="tealToLime">Pure Veg </Button>
                 </div>
 
                 <div className="">
-                    <button className=""
-                        onClick={ () => {
-                            const filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 0);
-                            setFilteredRestaurant(filteredList);
-                        }}><Button outline gradientDuoTone="tealToLime">
-                            Clear Filters </Button></button>
+                    <Button onClick={ () => {
+                                const filteredList = listOfRestaurant.filter((res) => res.info.avgRating > 0);
+                                setFilteredRestaurant(filteredList);
+                            }}
+                    outline gradientDuoTone="tealToLime">Clear Filters </Button>
                 </div>
             </div> 
 
