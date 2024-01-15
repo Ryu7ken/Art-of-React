@@ -17,7 +17,6 @@ const useRestaurantList = () => {
         const data = await fetch(RES_API);
 
         const json = await data.json();
-        console.log(json);
 
         // setListOfOffer(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
         setListOfCuisine(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);

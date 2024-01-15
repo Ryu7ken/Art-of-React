@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="flex justify-evenly p-10">
 
                 <div>
-                    <h1 className="text-2xl font-bold">foodpanda</h1>
+                    <h1 className="text-2xl font-bold">foodilicious</h1>
                 </div>
 
                 <div>
@@ -27,8 +27,8 @@ const Footer = () => {
                 <div className="w-11/12 border-t-2 m-auto border-gray-500">
                     
                     <div className="flex justify-evenly p-9">
-                        <h1>© foodpanda</h1>
-                        <Link to="https://github.com/Ryu7ken/foodpanda.git"><BsGithub size={30}/></Link>
+                        <h1>By Abdul Baquiur Rahman 😄</h1>
+                        <Link to="https://github.com/Ryu7ken/foodilicious.git"><BsGithub size={30}/></Link>
                     </div>
 
                 </div>

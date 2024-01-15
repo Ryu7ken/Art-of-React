@@ -10,12 +10,13 @@ const Header = () => {
     return (
         <div className="h-24 flex justify-between bg-opacity-25 bg-blue-100 shadow-blue-300 shadow-lg">
 
-            <Link to="/">
-                <div className="ml-10 h-28 scale-105 flex relative overflow-hidden transition duration-300 hover:duration-300 hover:scale-100">
-                    {/* <img src={fplogo} alt="" className="w-20 object-cover bg-transparent " />
-                    <img src={fptext} alt="" className="w-36 ml-2 scale-150 object-cover bg-transparent" /> */}
+            
+                <div className="w-56">
+                <Link to="/">
+                    <h1 className="text-center my-7 text-3xl font-semibold text-orange-600">foodilicious</h1>
+                </Link>
                 </div>
-            </Link>
+            
 
             <div className="flex items-center">
                 <ul className="flex my-auto">
