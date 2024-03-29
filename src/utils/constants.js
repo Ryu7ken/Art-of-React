@@ -2,7 +2,7 @@ export const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_l
 
 export const MENU_API = "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.11610&lng=79.07060&restaurantId=";
 
-export const RES_API = "/api/https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.51800&lng=88.38320&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+export const RES_API = "/api/https://corsproxy.org/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=15.612791&lng=77.27356&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 export const OFFER_IMG = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/";
 
