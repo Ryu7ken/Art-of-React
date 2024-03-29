@@ -1,4 +1,6 @@
-Fast and Responsive Food Odering App Built On React
+-- NOTE --
+Please download CORS extention on browser to load the website.
+
 
 Main Dependencies
 - React
